@@ -5,47 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chinese Zodiac</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
-  <body>
+  <body onload="getInitialAgeValue();">
     <div class="container">
       <div class="header clearfix">
         <h3 class="text-muted">Chinese Zodiac</h3>
       </div>
-
       <div class="jumbotron">
         <h2>Find Your Chinese Zodiac Sign</h2>
+        <br />
         <form id="myForm">
-
-          <br />
-          <div>
-            <select class="custom-select my-1 mr-sm-2" id="birthYearSelected">
-              <option selected>Select the year you were born</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+          <div class="form-row">
+            <div class="form-group col">
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter name...">
+            </div>
+            <div class="form-group col">
+              <div class="slidecontainer">
+                <input id="age" class="slider" type="range" min="18" max="75" value="26"
+                  onchange="displayYearOld();">
+                <p>Age: <span id="demo"></span></p>
+              </div>
+            </div>
           </div>
-          <br />
-          <button type="submit" class="btn btn-primary" onclick="GetSelectedValue()">Submit</button>
+          <button type="submit" class="btn btn-primary">Get the result</button>
         </form>
       </div>
-
       <div class="row marketing">
         <div class="col-lg-12">
           <div id="zodiacResults"></div>
         </div>
       </div>
-
-      <footer>
+      <footer class="footer">
         <p>&copy; 2018, Social Sweethearts GmbH</p>
       </footer>
     </div>
-
-    <script
-      src="http://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
