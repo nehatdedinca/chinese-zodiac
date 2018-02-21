@@ -1,19 +1,51 @@
 // Listen for form Submit
 document.getElementById('myForm').addEventListener('submit', calculateZodiacSign);
 
-
 function calculateZodiacSign(e){
-  // Get values of Name and Age
+  // Get values of Name, Age and calculate yearBorn
   var name = document.getElementById('nameInput').value;
   var age = document.getElementById('age').value;
-
   var yearBorn = calculateYearBorn(age);
 
   switch (yearBorn) {
-    case 1967, 1979, 1991, 2003, 2015:
-      getGoatDetails(name, yearBorn)
+    case 1960: case 1972: case 1984: case 1996: case 2008:
+      getRatDetails(name, yearBorn);
+      break;
+    case 1961: case 1973: case 1985: case 1997: case 2009:
+      getOxDetails(name, yearBorn);
+      break;
+    case 1962: case 1974: case 1986: case 1998: case 2010:
+      getTigerDetails(name, yearBorn);
+      break;
+    case 1963: case 1975: case 1987: case 1999: case 2011:
+      getRabbitDetails(name, yearBorn);
+      break;
+    case 1964: case 1976: case 1988: case 2000: case 2012:
+      getDragonDetails(name, yearBorn);
+      break;
+    case 1965: case 1977: case 1989: case 2001: case 2013:
+      getSnakeDetails(name, yearBorn);
+      break;
+    case 1966: case 1978: case 1990: case 2002: case 2014:
+      getHorseDetails(name, yearBorn);
+      break;
+    case 1967: case 1979: case 1991: case 2003: case 2015:
+      getGoatDetails(name, yearBorn);
+      break;
+    case 1968: case 1980: case 1992: case 2004: case 2016:
+      getMonkeyDetails(name, yearBorn);
+      break;
+    case 1969: case 1981: case 1993: case 2005: case 2017:
+      getRoosterDetails(name, yearBorn);
+      break;
+    case 1970: case 1982: case 1994: case 2006: case 2018:
+      getDogDetails(name, yearBorn);
+      break;
+    case 1971: case 1983: case 1995: case 2007: case 2019:
+      getPigDetails(name, yearBorn);
       break;
     default:
+      clearResult();
       alert('Select the right age you schmuck!');
       break;
   }
@@ -45,6 +77,187 @@ function displayYearOld() {
   }
 }
 
+function clearResult() {
+  zodiacResults.innerHTML = '';
+  document.getElementById('zodiacImage').src = "";
+}
+
+// Get Rat's details
+function getRatDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Rat ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>With strong intuition and quick response, they always easily adapt themselves to a new environment. With rich ' +
+      'imaginations and sharp observation, Rats can take advantage of various opportunities well. Rats have strong curiosity, ' +
+      'so they tend to try their hands at anything, and they can deal with it skillfully.</p>' +
+      '<br />' +
+      '</p><strong>Ladies</strong> belonging to the Rat zodiac sign are <strong>pretty, smart, and lovely.</strong> They have quick minds and dexterous ' +
+      'hands, and are able to learn anything.</p>' +
+      '<br />' +
+      '</p>A lack of courage, as well as good command skills, Rats are not capable as leaders. ' +
+      'Opportunistic and picky as Rats are, they do not have broad minds, but a narrow view.</p>' +
+      '</p>Rats are kind, but sometimes impolite to others. People of the Rat zodiac sign usually sleep late, for mice are nocturnal animals.</p>' +
+    '</div>';
+  // Get the right src for the rat's image
+  document.getElementById('zodiacImage').src = "images/rat.jpg";
+}
+
+// Get Ox's details
+function getOxDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Ox ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>Oxes are known for diligence, dependability, strength and determination. Having an honest nature, Oxes have a ' +
+      'strong patriotism for their country, have ideals and ambitions for life, and attach importance to family and work. ' +
+      'These things reflect the traditional characteristics of conservatives. Women belonging to the Ox zodiac sign are traditional, ' +
+      'faithful wives, who attach great importance to their children\'s education.</p>' +
+      '<br />' +
+      '<p>Having a desire to advance and great patience, Oxes can achieve their goals by consistent efforts. ' +
+      'They are not influenced by others or the environment, but persist to do things in accordance with their ideas ' +
+      'and capabilities. Before taking action, they will have a definite plan with detailed steps and add their ' +
+      'strong faith and physical strength. So people of the Ox zodiac sign enjoy great success as a result.</p>' +
+      '<br />' +
+      '<p>The most disadvantageous trait in Oxes is poor communication skills. They are not good at communicating ' +
+      'with others, and even think it not worthwhile exchanging ideas with others. They are stubborn and stick ' +
+      'to their own ways.</p>'
+    '</div>';
+  // Get the right src for the Ox's image
+  document.getElementById('zodiacImage').src = "images/ox.jpg";
+}
+
+// Get Tiger's details
+function getTigerDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Tiger ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>People born in the year of the Tiger are brave, competitive, unpredictable, and self-confident. ' +
+      'They are very charming and well-liked by others. But sometimes they are likely to be impetuous, ' +
+      'irritable, and overindulged.</p>' +
+      '<br />' +
+      '<p><strong>With stubborn personalities</strong> and tough judgment, tigers work actively and boldly express themselves, ' +
+      'and do things with a high-handed manner. They are authoritative and never go back on what they have said.</p>' +
+      '<br />' +
+      '<p><strong>With great confidence</strong> and indomitable fortitude, they can be competent leaders. ' +
+      'They will not make preparations for anything, but they can handle anything that comes along.</p>'
+    '</div>';
+  // Get the right src for the tiger's image
+  document.getElementById('zodiacImage').src = "images/tiger.jpg";
+}
+
+// Get Rabbit's details
+function getRabbitDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Rabbit ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>Rabbits tend to be gentle, quiet, elegant, and alert; quick, skillful, kind, and patient; ' +
+      'and particularly responsible. However, they might be superficial, stubborn, melancholy, and overly-discreet. ' +
+      'Generally speaking, people who belong to the Rabbit zodiac sign have likable characters.</p>' +
+      '<br />' +
+      '<p><strong>Gentlemen</strong> who belong to the rabbit zodiac sign always treat people politely, with a gentle ' +
+      'smile that makes people feel that they are credible and sincere. When meeting trouble, Rabbits can handle it ' +
+      'in an orderly way; when encountering tough difficulties they are never discouraged, but are persistent to ' +
+      'seek solutions. So they eventually achieve enviable success.</p>' +
+      '<br />' +
+      '<p><strong>Ladies</strong> belonging to the rabbit zodiac sign, apart from a pretty and demure appearance, have ' +
+      'a pure heart. Rabbits are faithful to those around them, but reluctant to reveal their minds to others, ' +
+      'and have a tendency to escape reality. They are too cautious and conservative, which means they miss good opportunities.</p>'
+    '</div>';
+  // Get the right src for the rabbit's image
+  document.getElementById('zodiacImage').src = "images/rabbit.jpg";
+}
+
+// Get Dragon's details
+function getDragonDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Dragon ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>Among Chinese zodiac animals, the Dragon is the sole imaginary animal. The Dragon is the most vital ' +
+      'and powerful beast in the Chinese zodiac, although with an infamous reputation for being a hothead and ' +
+      'possessing a sharp tongue. In ancient times, people thought that Dragons could control everything in ' +
+      'the world with their character traits of dominance and ambition.</p>' +
+      '<br />' +
+      '<p>Gifted with innate courage, tenacity and intelligence, dragons are enthusiastic and confident. ' +
+      'They are not afraid of challenges, and willing to take risks.</p>' +
+      '<br />' +
+      '<p>However, the dragon is sometimes regarded as aggressive, and angry dragons are not open to criticism.' +
+      ' They don\'t consider themselves irritating and arrogant. Instead of following tradition, ' +
+      'they strive for a smooth future.</p>'
+    '</div>';
+  // Get the right src for the dragon's image
+  document.getElementById('zodiacImage').src = "images/dragon.jpg";
+}
+
+// Get Snake's details
+function getSnakeDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Snake ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>In Chinese culture, the Snake is the most enigmatic animal among the twelve zodiac animals. ' +
+      'People born in a year of the Snake are supposed to be the most intuitive.</p>' +
+      '<br />' +
+      '<p>Snakes tend to act according to their own judgments, even while remaining the most ' +
+      'private and reticent. They are determined to accomplish their goals and hate to fail.</p>' +
+      '<br />' +
+      '<p>Snakes represent the symbol of wisdom. They are intelligent and wise. They are good ' +
+      'at communication but say little. Snakes are usually regarded as great thinkers.</p>'
+      '<br />' +
+      '<p>Snakes are materialistic and love keeping up with the Joneses. They love to posses ' +
+      'the best of everything, but they have no patience for shopping.</p>'
+      '<br />' +
+      '<p>Snake people prefer to work alone, therefore they are easily stressed. If they seem ' +
+      'unusually stressed, it is best to allow them their own space and time to return to normal.</p>'
+    '</div>';
+  // Get the right src for the snake's image
+  document.getElementById('zodiacImage').src = "images/snake.jpg";
+}
+
+// Get Horse's details
+function getHorseDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Horse ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>People born in a year of the Horse are extremely animated, active and energetic. ' +
+      'Horses love to be in a crowd, and they can usually be seen on such occasions as concerts, ' +
+      'theater performances, meetings, sporting events, and parties.</p>' +
+      '<br />' +
+      '<p>With a deft sense of humor, Horses are masters of repartee. They love to take center stage and delight audiences everywhere.</p>' +
+      '<br />' +
+      '<p>Sometimes, the Horse is a little self-centered, but it doesn\'t mean that s/he can not be ' +
+      'interested in others\' problems. Horses are really more cunning than intelligent, and that is ' +
+      'probably why most Horse people lack real confidence.</p>'
+    '</div>';
+  // Get the right src for the horse's image
+  document.getElementById('zodiacImage').src = "images/horse.jpg";
+}
+
 // Get Goat's details
 function getGoatDetails(name, yearBorn) {
   // Display the result
@@ -55,18 +268,117 @@ function getGoatDetails(name, yearBorn) {
       '<h3>Goat ' + name + ', born in ' + yearBorn + '</h3>' +
       '<br />' +
       '<p>People born in a year of the Goat are generally believed to be <strong>gentle</strong> mild-mannered, shy, stable, ' +
-      'sympathetic, amicable, and brimming with a strong sense of kindheartedness and justice. ' +
+      'sympathetic, amicable, and brimming with a strong sense of kindheartedness and justice.</p>' +
       '<br />' +
-      '<br />' +
-      'They have very <strong>delicate thoughts,</strong> strong creativity, and perseverance, and acquire professional skills well. Although they look gentle on ' +
+      '<p>They have very <strong>delicate thoughts,</strong> strong creativity, and perseverance, and acquire professional skills well. Although they look gentle on ' +
       'the surface, they are tough on the inside, always insisting on their own opinions in their minds. They have strong ' +
-      'inner resilience and excellent defensive instincts.' +
+      'inner resilience and excellent defensive instincts.</p>' +
       '<br />' +
-      '<br />' +
-      'Though they <strong>prefer to be in groups,</strong> they do not want to be the center of attention. They are reserved ' +
+      '<p>Though they <strong>prefer to be in groups,</strong> they do not want to be the center of attention. They are reserved ' +
       'and quiet, most likely because they like spending much time in their thoughts. Goats like to spend money on fashionable ' +
-      'things that give them a first class appearance. Although goats enjoy spending money on the finer things in life, they are not snobbish.'
+      'things that give them a first class appearance. Although goats enjoy spending money on the finer things in life, they are not snobbish.</p>'
     '</div>';
   // Get the right src for the goat's image
   document.getElementById('zodiacImage').src = "images/goat.jpg";
+}
+
+// Get Monkey's details
+function getMonkeyDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Monkey ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>People born in a year of the Monkey have magnetic personalities and are witty and intelligent. ' +
+      'Personality traits like mischievousness, curiosity, and cleverness, make them <strong>very naughty.</strong></p>' +
+      '<br />' +
+      '<p>Monkeys are <strong>masters of practical jokes,</strong> because they like playing most of the time. ' +
+      'Though they don\'t have bad intentions, their pranks sometimes hurt the feelings of others.</p>' +
+      '<br />' +
+      '<p>Monkeys are <strong>fast learners and crafty</strong> opportunists. They have many interests ' +
+      'and need partners who are capable of stimulating them. While some like the eccentric nature of ' +
+      'Monkeys, others don\'t trust their sly, restless, and inquisitive nature.</p>'
+      '<br />' +
+      '<p>Although they are clever and creative, Monkeys can\'t always exhibit their talents properly. ' +
+      'They like to accept challenges and <strong>prefer urban life</strong> to rural.</p>' +
+    '</div>';
+  // Get the right src for the monkey's image
+  document.getElementById('zodiacImage').src = "images/monkey.jpg";
+}
+
+// Get Rooster's details
+function getRoosterDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Rooster ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>Roosters are always <strong>active</strong>, amusing, and popular within a crowd. Roosters are <strong>talkative,</strong> ' +
+      'outspoken, frank, open, honest, and loyal individuals. They like to be the center of attention and ' +
+      'always appear attractive and beautiful.</p>' +
+      '<br />' +
+      '<p>Roosters are happiest when they are surrounded by others, whether at a party or just a social gathering. ' +
+      'They <strong>enjoy the spotlight</strong> and will exhibit their charm on any occasion.</p>' +
+      '<br />' +
+      '<p>Roosters expect others to listen to them while they speak, and can become agitated if they don\'t. ' +
+      'Vain and boastful, Roosters like to brag about themselves and their accomplishments.</p>'
+      '<br />' +
+      '<p>Their behavior of continually seeking the unwavering attention of others annoys people around them at times.</p>' +
+    '</div>';
+  // Get the right src for the rooster's image
+  document.getElementById('zodiacImage').src = "images/rooster.jpg";
+}
+
+// Get Dog's details
+function getDogDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Dog ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>Dogs are loyal and honest, amiable and kind, cautious and prudent. Due to having a strong sense ' +
+      'of loyalty and sincerity, Dogs will do everything for the person who they think is most important.</p>' +
+      '<br />' +
+      '<p>As Dogs are not good at communication, it is difficult for them to convey their thoughts to others. ' +
+      'Therefore, Dogs tend to leave others with <strong>the impression that they have a stubborn personality.</strong></p>' +
+      '<br />' +
+      '<p><strong>Born with a good nature,</strong> Dogs do not tend to be criminals or seek dishonest gains. ' +
+      'They just need a quiet life and a good family and, therefore, forget the ugliness and evil on Earth.</p>'
+      '<br />' +
+      '<p><strong>Dogs are always ready to help others</strong> and do not care about their own interests, ' +
+      'but if they find themselves betrayed by cunning people they will feel shocked and hurt.</p>' +
+      '<br />' +
+      '<p><strong>When thrown into doubt,</strong> Dogs think the world is evil and complicated. Then they ' +
+      'criticize sharply when giving comments on something, and infer all things are ' +
+      'according to their pessimistic point of view.</p>' +
+    '</div>';
+  // Get the right src for the dog's image
+  document.getElementById('zodiacImage').src = "images/dog.jpg";
+}
+
+// Get Pig's details
+function getPigDetails(name, yearBorn) {
+  // Display the result
+  zodiacResults.innerHTML = '';
+  zodiacResults.innerHTML +=
+    '<div class="well">' +
+      '<br />' +
+      '<h3>Pig ' + name + ', born in ' + yearBorn + '</h3>' +
+      '<br />' +
+      '<p>Pigs are diligent, compassionate, and generous. They have great concentration: once they set a goal, ' +
+      'they will devote all their energy to achieving it. Though Pigs rarely seek help from others, they will ' +
+      'not refuse to give others a hand. Pigs never suspect trickery, so they are easily fooled.</p>' +
+      '<br />' +
+      '<p>General speaking, Pigs are relatively calm when facing trouble. No matter how difficult the problems ' +
+      'are Pigs encounter, they can handle things properly and carefully. They have a great sense of ' +
+      'responsibility to finish what they are engaged in.</p>' +
+    '</div>';
+  // Get the right src for the pig's image
+  document.getElementById('zodiacImage').src = "images/pig.jpg";
 }
