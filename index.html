@@ -4,39 +4,88 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Chinese Zodiac</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body onload="getInitialAgeValue();">
     <div class="container">
       <div class="header clearfix">
-        <h3 class="text-muted">Chinese Zodiac</h3>
+        <h2 class="text-muted">Chinese Zodiac</h4>
       </div>
       <div class="jumbotron">
-        <h2>Find Your Chinese Zodiac Sign</h2>
+        <h3>Find Your Chinese Zodiac Sign</h3>
         <br />
         <form id="myForm">
           <div class="form-row">
-            <div class="form-group col">
+            <label class="form-group col-4">Gender</label>
+            <div class="form-group col-8">
+               <div class="btn-group d-flex" role="group">
+                  <button id="image1" type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">
+                    <img id="fbImage" src="images/boy.png" width="40" />
+                  </button>
+                  <button id="image2" type="button" class="btn btn-secondary w-100" onclick="handleImage2Click()">
+                    <img id="fbImage" src="images/girl.png" width="40" />
+                  </button>
+                </div>
+             </div>
+          </div>
+          <div class="form-row">
+            <label class="form-group col-4">Name</label>
+            <div class="form-group col-8">
               <input type="text" class="form-control" id="nameInput" placeholder="Enter name...">
             </div>
-            <div class="form-group col">
+          </div>
+          <div class="form-row">
+            <p class="form-group col-4">Age <span id="demo"></span></p>
+            <div class="form-group col-8">
               <div class="slidecontainer">
                 <input id="age" class="slider" type="range" min="18" max="58" value="26"
                   onchange="displayYearOld();">
-                <p>Age: <span id="demo"></span></p>
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Get the result</button>
+          <div class="form-row">
+            <label class="form-group col-4">Hairlength</label>
+            <div class="form-group col-8">
+              <div class="btn-group d-flex" role="group">
+                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Long</button>
+                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Middle</button>
+                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Short</button>
+                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Bald</button>
+               </div>
+             </div>
+          </div>
+          <div class="form-row">
+            <label class="form-group col-4">Eye color</label>
+            <div class="form-group col-8">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Brown">
+                <label class="form-check-label" for="inlineRadio1">Brown</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Green">
+                <label class="form-check-label" for="inlineRadio2">Green</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Blue">
+                <label class="form-check-label" for="inlineRadio2">Blue</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Grey">
+                <label class="form-check-label" for="inlineRadio2">Grey</label>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Get the result</button>
+          </div>
         </form>
       </div>
-      <div class="jumbotron">
-        <img id="zodiacImage" src="" class="rounded float-right">
-        <h2>Your chienese zodiac sign is:</h2>
-        <div id="zodiacResults"></div>
+      <div id="displayResult" class="card border-secondary mb-3" hidden="true">
+        <div class="card-header">Result about your chinese zodiac sign</div>
+        <div id="result" class="card-body text-secondary"></div>
       </div>
       <footer class="footer">
         <p>&copy; 2018, Social Sweethearts GmbH</p>
