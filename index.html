@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body onload="getInitialAgeValue();">
+    <div class="banner">
+      <div class="container">
+        <div class="row bannerContent">
+          <a href="#">
+            <img class="logo" src="images/favicon.png"/>
+          </a>
+          <h3 class="text">Nehat DeDinca</h3>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="header clearfix">
         <h2 class="text-muted">Chinese Zodiac</h4>
@@ -22,11 +32,11 @@
             <label class="form-group col-4">Gender</label>
             <div class="form-group col-8">
                <div class="btn-group d-flex" role="group">
-                  <button id="image1" type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">
-                    <img id="fbImage" src="images/boy.png" width="40" />
+                  <button id="boyBtn" type="button" class="btn btn-secondary w-100" onclick="boyBtnActive()">
+                    <img src="images/boy.png" width="40" />
                   </button>
-                  <button id="image2" type="button" class="btn btn-secondary w-100" onclick="handleImage2Click()">
-                    <img id="fbImage" src="images/girl.png" width="40" />
+                  <button id="girlBtn" type="button" class="btn btn-secondary w-100" onclick="girlBtnActive()">
+                    <img src="images/girl.png" width="40" />
                   </button>
                 </div>
              </div>
@@ -50,10 +60,14 @@
             <label class="form-group col-4">Hairlength</label>
             <div class="form-group col-8">
               <div class="btn-group d-flex" role="group">
-                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Long</button>
-                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Middle</button>
-                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Short</button>
-                 <button type="button" class="btn btn-secondary w-100" onclick="handleImage1Click()">Bald</button>
+                <button id="long" type="button" class="btn btn-secondary w-100"
+                  onclick="longBtnActive()">Long</button>
+                <button id="middle" type="button" class="btn btn-secondary w-100"
+                  onclick="middleBtnActive()">Middle</button>
+                <button id="short" type="button" class="btn btn-secondary w-100"
+                  onclick="shortBtnActive()">Short</button>
+                <button id="bald" type="button" class="btn btn-secondary w-100"
+                  onclick="baldBtnActive()">Bald</button>
                </div>
              </div>
           </div>
