@@ -425,14 +425,66 @@ function getPigDetails(name, yearBorn) {
       '</div>';
 }
 
-// To be completed
-function handleImage1Click() {
-  document.getElementById('image1').style.background = 'green';
-  document.getElementById('image2').style.background = 'red';
+// Handle boyBtn active
+function boyBtnActive() {
+  var boyBtn = document.getElementById('boyBtn');
+  var girlBtn = document.getElementById('girlBtn');
+  boyBtn.classList.add('active');
+  girlBtn.classList.remove('active');
 }
 
-// To be completed
-function handleImage2Click() {
-  document.getElementById('image1').style.background = 'red';
-  document.getElementById('image2').style.background = 'green';
+// Handle girlBtn active
+function girlBtnActive() {
+  var boyBtn = document.getElementById('boyBtn');
+  var girlBtn = document.getElementById('girlBtn');
+  boyBtn.classList.remove('active');
+  girlBtn.classList.add('active');
+}
+
+// Handle long btn active class
+function longBtnActive() {
+  var long = document.getElementById('long');
+  var middle = document.getElementById('middle');
+  var short = document.getElementById('short');
+  var bald = document.getElementById('bald');
+  long.classList.add('active');
+  middle.classList.remove('active');
+  short.classList.remove('active');
+  bald.classList.remove('active');
+}
+
+// Handle Middle btn active class
+function middleBtnActive() {
+  var long = document.getElementById('long');
+  var middle = document.getElementById('middle');
+  var short = document.getElementById('short');
+  var bald = document.getElementById('bald');
+  long.classList.remove('active');
+  middle.classList.add('active');
+  short.classList.remove('active');
+  bald.classList.remove('active');
+}
+
+// Handle Short btn active class
+function shortBtnActive() {
+  var long = document.getElementById('long');
+  var middle = document.getElementById('middle');
+  var short = document.getElementById('short');
+  var bald = document.getElementById('bald');
+  long.classList.remove('active');
+  middle.classList.remove('active');
+  short.classList.add('active');
+  bald.classList.remove('active');
+}
+
+// Handle Bald btn active class
+function baldBtnActive() {
+  var long = document.getElementById('long');
+  var middle = document.getElementById('middle');
+  var short = document.getElementById('short');
+  var bald = document.getElementById('bald');
+  long.classList.remove('active');
+  middle.classList.remove('active');
+  short.classList.remove('active');
+  bald.classList.add('active');
 }
