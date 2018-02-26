@@ -488,3 +488,28 @@ function baldBtnActive() {
   short.classList.remove('active');
   bald.classList.add('active');
 }
+
+// Adjust eye color accordingly when clicked
+function pickEyeColor() {
+  if (document.getElementById('brown').checked) {
+    document.getElementById('brownLbl').style.color = "#994d00";
+    document.getElementById('greenLbl').style.color = "#595959";
+    document.getElementById('blueLbl').style.color = "#595959";
+    document.getElementById('greyLbl').style.color = "#595959";
+  } else if (document.getElementById('green').checked) {
+    document.getElementById('brownLbl').style.color = "#595959";
+    document.getElementById('greenLbl').style.color = "#009900";
+    document.getElementById('blueLbl').style.color = "#595959";
+    document.getElementById('greyLbl').style.color = "#595959";
+  } else if (document.getElementById('blue').checked) {
+    document.getElementById('brownLbl').style.color = "#595959";
+    document.getElementById('greenLbl').style.color = "#595959";
+    document.getElementById('blueLbl').style.color = "#0000b3";
+    document.getElementById('greyLbl').style.color = "#595959";
+  }else if(document.getElementById('grey').checked) {
+    document.getElementById('brownLbl').style.color = "#595959";
+    document.getElementById('greenLbl').style.color = "#595959";
+    document.getElementById('blueLbl').style.color = "#595959";
+    document.getElementById('greyLbl').style.color = "#6b6b47";
+  }
+}

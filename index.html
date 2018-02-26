@@ -16,20 +16,15 @@
           <a href="#">
             <img class="logo" src="images/favicon.png"/>
           </a>
-          <h3 class="text">Nehat DeDinca</h3>
+          <h3 class="text">Find your chinese zodiac sign</h3>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="header clearfix">
-        <h2 class="text-muted">Chinese Zodiac</h4>
-      </div>
       <div class="jumbotron">
-        <h3>Find Your Chinese Zodiac Sign</h3>
-        <br />
         <form id="myForm">
           <div class="form-row">
-            <label class="form-group col-4">Gender</label>
+            <label class="form-group col-4 textContent">Gender</label>
             <div class="form-group col-8">
                <div class="btn-group d-flex" role="group">
                   <button id="boyBtn" type="button" class="btn btn-secondary w-100" onclick="boyBtnActive()">
@@ -42,13 +37,13 @@
              </div>
           </div>
           <div class="form-row">
-            <label class="form-group col-4">Name</label>
+            <label class="form-group col-4 textContent">Name</label>
             <div class="form-group col-8">
               <input type="text" class="form-control" id="nameInput" placeholder="Enter name...">
             </div>
           </div>
           <div class="form-row">
-            <p class="form-group col-4">Age <span id="demo"></span></p>
+            <p class="form-group col-4 textContent">Age <span id="demo"></span></p>
             <div class="form-group col-8">
               <div class="slidecontainer">
                 <input id="age" class="slider" type="range" min="18" max="58" value="26"
@@ -57,7 +52,7 @@
             </div>
           </div>
           <div class="form-row">
-            <label class="form-group col-4">Hairlength</label>
+            <label class="form-group col-4 textContent">Hairlength</label>
             <div class="form-group col-8">
               <div class="btn-group d-flex" role="group">
                 <button id="long" type="button" class="btn btn-secondary w-100"
@@ -72,28 +67,32 @@
              </div>
           </div>
           <div class="form-row">
-            <label class="form-group col-4">Eye color</label>
+            <label class="form-group col-4 textContent">Eye color</label>
             <div class="form-group col-8">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Brown">
-                <label class="form-check-label" for="inlineRadio1">Brown</label>
+                <input id="brown" class="form-check-input" type="radio" name="inlineRadioOptions"
+                  value="Brown" onclick="pickEyeColor();">
+                <label id="brownLbl" class="form-check-label textContent" for="inlineRadio1">Brown</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Green">
-                <label class="form-check-label" for="inlineRadio2">Green</label>
+                <input id="green" class="form-check-input" type="radio" name="inlineRadioOptions"
+                  value="Green" onclick="pickEyeColor();">
+                <label id="greenLbl" class="form-check-label textContent" for="inlineRadio2">Green</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Blue">
-                <label class="form-check-label" for="inlineRadio2">Blue</label>
+                <input id="blue" class="form-check-input" type="radio" name="inlineRadioOptions"
+                  value="Blue" onclick="pickEyeColor();">
+                <label id="blueLbl" class="form-check-label textContent" for="inlineRadio2">Blue</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Grey">
-                <label class="form-check-label" for="inlineRadio2">Grey</label>
+                <input id="grey" class="form-check-input" type="radio" name="inlineRadioOptions"
+                  value="Grey" onclick="pickEyeColor();">
+                <label id="greyLbl" class="form-check-label textContent" for="inlineRadio2">Grey</label>
               </div>
             </div>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-primary">Get the result</button>
+            <button type="submit" class="btn btn-primary">Get Result</button>
           </div>
         </form>
       </div>
