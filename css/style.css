@@ -23,6 +23,7 @@ body {
 
 .text {
   font-weight: bold;
+  font-size: 2.2rem;
   padding-left: 15px;
   color: #800000;
 }
@@ -30,6 +31,55 @@ body {
 .logo {
   height: 50px;
   width: 50px;
+}
+
+.textContent {
+  color: #595959;
+  font-size: 1.1rem;
+}
+
+.btn-secondary {
+  color: #800000;
+  background-color: #ffffff;
+  border-color: #cc0000;
+}
+
+.btn-secondary:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.btn-primary:hover {
+  color: #cc0000;
+  background-color: #ffffff;
+  border-color: #cc0000;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.form-control {
+  border: 1px solid #800000;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -73,6 +123,9 @@ body {
 .jumbotron {
   text-align: left;
   border-bottom: 1px solid #e5e5e5;
+  margin-top: 20px;
+  padding: 2rem 2rem;
+  background-color: #ffffff;
 }
 
 /* Enlarge img when hovering the mouse */
@@ -124,7 +177,7 @@ img:hover {
   width: 100%;
   height: 15px;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #ff8080;
   outline: none;
   opacity: 0.8;
   -webkit-transition: .2s;
@@ -141,7 +194,7 @@ img:hover {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #cc0000;
   cursor: pointer;
 }
 
@@ -149,6 +202,6 @@ img:hover {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #cc0000;
   cursor: pointer;
 }
