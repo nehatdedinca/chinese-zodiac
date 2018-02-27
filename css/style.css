@@ -1,7 +1,7 @@
 /* Space out content a bit */
 body {
   padding-bottom: 20px;
-  background: radial-gradient(#ffffff, #ebebe0);
+  background: #f2f2f2;
 }
 
 .banner {
@@ -45,7 +45,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: #cc0000;
+  background-color: #e60000;
   border-color: #cc0000;
 }
 
@@ -88,18 +88,13 @@ body {
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 30px;
 }
 
 /* Custom page header */
 .header {
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
 }
 
 /* Custom page footer */
@@ -115,37 +110,36 @@ body {
     max-width: 730px;
   }
 }
-.container-narrow > hr {
-  margin: 30px 0;
-}
 
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: left;
-  border-bottom: 1px solid #e5e5e5;
   margin-top: 20px;
   padding: 2rem 2rem;
   background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,.125)
 }
 
 /* Enlarge img when hovering the mouse */
-img {
+.imgZoomEffect {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-img:hover {
+.imgZoomEffect:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.badge {
+  color: #ffffff;
+  background-color: #cc0000;
+  font-size: 0.7rem;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+
+.card-title {
+  color: #800000;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -156,14 +150,6 @@ img:hover {
   .footer {
     padding-right: 0;
     padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
 

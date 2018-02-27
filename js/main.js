@@ -85,9 +85,9 @@ function getRatDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Rat born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/rat.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 2 & 3</span>' +
+        '<span class="badge">Lucky numbers: 2 & 3</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Blue, Gold & Green</span>' +
+        '<span class="badge">Lucky colors: Blue, Gold & Green</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">With strong intuition and quick response, they always easily adapt themselves to a new environment. With rich ' +
@@ -113,9 +113,9 @@ function getOxDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s an Ox born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/ox.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 1 & 4</span>' +
+        '<span class="badge">Lucky numbers: 1 & 4</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: White, Yellow & Green</span>' +
+        '<span class="badge">Lucky colors: White, Yellow & Green</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">Oxes are known for diligence, dependability, strength and determination. Having an honest nature, Oxes have a ' +
@@ -144,9 +144,9 @@ function getTigerDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Tiger born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/tiger.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 1, 3 & 4</span>' +
+        '<span class="badge">Lucky numbers: 1, 3 & 4</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Blue, Grey & Orange</span>' +
+        '<span class="badge">Lucky colors: Blue, Grey & Orange</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">People born in the year of the Tiger are brave, competitive, unpredictable, and self-confident. ' +
@@ -171,9 +171,9 @@ function getRabbitDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Rabbit born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/rabbit.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 3, 4 & 6</span>' +
+        '<span class="badge">Lucky numbers: 3, 4 & 6</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Red, Pink, Purple & Blue</span>' +
+        '<span class="badge">Lucky colors: Red, Pink, Purple & Blue</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">Rabbits tend to be gentle, quiet, elegant, and alert; quick, skillful, kind, and patient; ' +
@@ -201,9 +201,9 @@ function getDragonDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Dragon born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/dragon.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 1, 6 & 7</span>' +
+        '<span class="badge">Lucky numbers: 1, 6 & 7</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Gold, Silver & Grayish White</span>' +
+        '<span class="badge">Lucky colors: Gold, Silver & Grayish White</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">Among Chinese zodiac animals, the Dragon is the sole imaginary animal. The Dragon is the most vital ' +
@@ -230,9 +230,9 @@ function getSnakeDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Snake born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/snake.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 2, 8 & 9</span>' +
+        '<span class="badge">Lucky numbers: 2, 8 & 9</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Black, Red & Yellow</span>' +
+        '<span class="badge">Lucky colors: Black, Red & Yellow</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">In Chinese culture, the Snake is the most enigmatic animal among the twelve zodiac animals. ' +
@@ -263,9 +263,9 @@ function getHorseDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Horse born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/horse.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 2, 3, 7, and numbers containing them (like 23 and 37)</span>' +
+        '<span class="badge">Lucky numbers: 2, 3, 7, and numbers containing them (like 23 and 37)</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Yellow & Green</span>' +
+        '<span class="badge">Lucky colors: Yellow & Green</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">People born in a year of the Horse are extremely animated, active and energetic. ' +
@@ -290,9 +290,9 @@ function getGoatDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Goat born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/goat.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 2 & 7</span>' +
+        '<span class="badge">Lucky numbers: 2 & 7</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Brown, Red & Purple</span>' +
+        '<span class="badge">Lucky colors: Brown, Red & Purple</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">People born in a year of the Goat are generally believed to be <strong>gentle</strong> mild-mannered, shy, stable, ' +
@@ -318,9 +318,9 @@ function getMonkeyDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Monkey born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/monkey.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 4 & 9</span>' +
+        '<span class="badge">Lucky numbers: 4 & 9</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: White, Blue & Gold</span>' +
+        '<span class="badge">Lucky colors: White, Blue & Gold</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">People born in a year of the Monkey have magnetic personalities and are witty and intelligent. ' +
@@ -348,9 +348,9 @@ function getRoosterDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Rooster born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/rooster.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 5, 7, & 8</span>' +
+        '<span class="badge">Lucky numbers: 5, 7, & 8</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Gold, Brown, & Yellow</span>' +
+        '<span class="badge">Lucky colors: Gold, Brown, & Yellow</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">Roosters are always <strong>active</strong>, amusing, and popular within a crowd. Roosters are <strong>talkative,</strong> ' +
@@ -377,9 +377,9 @@ function getDogDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Dog born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/dog.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 3, 4, & 9</span>' +
+        '<span class="badge">Lucky numbers: 3, 4, & 9</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Red, Green, & Purple</span>' +
+        '<span class="badge">Lucky colors: Red, Green, & Purple</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">Dogs are loyal and honest, amiable and kind, cautious and prudent. Due to having a strong sense ' +
@@ -410,9 +410,9 @@ function getPigDetails(name, yearBorn) {
         '<h4 class="card-title">' + name + '\'s a Pig born in ' + yearBorn + '</h4>' +
         '<img id="zodiacImage" src="images/pig.jpg" class="rounded float-right"/>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky numbers: 2, 5 & 8</span>' +
+        '<span class="badge">Lucky numbers: 2, 5 & 8</span>' +
         '<br />' +
-        '<span class="badge badge-danger">Lucky colors: Yellow, Gray, Brown, Gold</span>' +
+        '<span class="badge">Lucky colors: Yellow, Gray, Brown, Gold</span>' +
         '<br />' +
         '<br />' +
         '<p class="card-text">Pigs are diligent, compassionate, and generous. They have great concentration: once they set a goal, ' +
