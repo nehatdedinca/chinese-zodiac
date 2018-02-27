@@ -28,10 +28,10 @@
             <div class="form-group col-8">
                <div class="btn-group d-flex" role="group">
                   <button id="boyBtn" type="button" class="btn btn-secondary w-100" onclick="boyBtnActive()">
-                    <img src="images/boy.png" width="40" />
+                    <img class="imgZoomEffect" src="images/boy.png" width="40" />
                   </button>
                   <button id="girlBtn" type="button" class="btn btn-secondary w-100" onclick="girlBtnActive()">
-                    <img src="images/girl.png" width="40" />
+                    <img class="imgZoomEffect" src="images/girl.png" width="40" />
                   </button>
                 </div>
              </div>
@@ -96,8 +96,8 @@
           </div>
         </form>
       </div>
-      <div id="displayResult" class="card border-secondary mb-3" hidden="true">
-        <div class="card-header">Result about your chinese zodiac sign</div>
+      <div id="displayResult" class="card" hidden="true">
+        <div class="card-header textContent">Result about your chinese zodiac sign</div>
         <div id="result" class="card-body text-secondary"></div>
       </div>
       <footer class="footer">
