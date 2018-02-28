@@ -7,6 +7,16 @@ function calculateZodiacSign(e){
   var age = document.getElementById('age').value;
   var yearBorn = calculateYearBorn(age);
 
+  // Validate name field
+  if (name == '') {
+    alert('Please fill in the name and try again!');
+    document.getElementById('nameInput').style.borderColor = "red";
+    document.getElementById("nameInput").focus();
+    e.preventDefault();
+    return false;
+  }
+
+  // Display data accordingly
   switch (yearBorn) {
     case 1960: case 1972: case 1984: case 1996: case 2008:
       getRatDetails(name, yearBorn);
