@@ -59,6 +59,9 @@ function calculateZodiacSign(e){
       break;
   }
 
+  // Focus on the result displayed
+  document.getElementById("displayResult").scrollIntoView();
+
   // Prevent form from submitting
   e.preventDefault();
 }
@@ -110,6 +113,9 @@ function getRatDetails(name, yearBorn) {
         '<p class="card-text">A lack of courage, as well as good command skills, Rats are not capable as leaders. ' +
         'Opportunistic and picky as Rats are, they do not have broad minds, but a narrow view.</p>' +
         '<p class="card-text">Rats are kind, but sometimes impolite to others. People of the Rat zodiac sign usually sleep late, for mice are nocturnal animals.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -140,7 +146,10 @@ function getOxDetails(name, yearBorn) {
         '<br />' +
         '<p>The most disadvantageous trait in Oxes is poor communication skills. They are not good at communicating ' +
         'with others, and even think it not worthwhile exchanging ideas with others. They are stubborn and stick ' +
-        'to their own ways.</p>'
+        'to their own ways.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -167,7 +176,10 @@ function getTigerDetails(name, yearBorn) {
         'and do things with a high-handed manner. They are authoritative and never go back on what they have said.</p>' +
         '<br />' +
         '<p><strong>With great confidence</strong> and indomitable fortitude, they can be competent leaders. ' +
-        'They will not make preparations for anything, but they can handle anything that comes along.</p>'
+        'They will not make preparations for anything, but they can handle anything that comes along.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -197,7 +209,10 @@ function getRabbitDetails(name, yearBorn) {
         '<br />' +
         '<p class="card-text"><strong>Ladies</strong> belonging to the rabbit zodiac sign, apart from a pretty and demure appearance, have ' +
         'a pure heart. Rabbits are faithful to those around them, but reluctant to reveal their minds to others, ' +
-        'and have a tendency to escape reality. They are too cautious and conservative, which means they miss good opportunities.</p>'
+        'and have a tendency to escape reality. They are too cautious and conservative, which means they miss good opportunities.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -226,7 +241,10 @@ function getDragonDetails(name, yearBorn) {
         '<br />' +
         '<p class="card-text">However, the dragon is sometimes regarded as aggressive, and angry dragons are not open to criticism.' +
         ' They don\'t consider themselves irritating and arrogant. Instead of following tradition, ' +
-        'they strive for a smooth future.</p>'
+        'they strive for a smooth future.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -252,14 +270,17 @@ function getSnakeDetails(name, yearBorn) {
         'private and reticent. They are determined to accomplish their goals and hate to fail.</p>' +
         '<br />' +
         '<p class="card-text">Snakes represent the symbol of wisdom. They are intelligent and wise. They are good ' +
-        'at communication but say little. Snakes are usually regarded as great thinkers.</p>'
+        'at communication but say little. Snakes are usually regarded as great thinkers.</p>' +
         '<br />' +
         '<p class="card-text">Snakes are materialistic and love keeping up with the Joneses. They love to posses ' +
-        'the best of everything, but they have no patience for shopping.</p>'
+        'the best of everything, but they have no patience for shopping.</p>' +
         '<br />' +
         '<p class="card-text">Snake people prefer to work alone, therefore they are easily stressed. If they seem ' +
-        'unusually stressed, it is best to allow them their own space and time to return to normal.</p>'
-        'they strive for a smooth future.</p>'
+        'unusually stressed, it is best to allow them their own space and time to return to normal.</p>' +
+        'they strive for a smooth future.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -286,7 +307,10 @@ function getHorseDetails(name, yearBorn) {
         '<br />' +
         '<p class="card-text">Sometimes, the Horse is a little self-centered, but it doesn\'t mean that s/he can not be ' +
         'interested in others\' problems. Horses are really more cunning than intelligent, and that is ' +
-        'probably why most Horse people lack real confidence.</p>'
+        'probably why most Horse people lack real confidence.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -314,7 +338,10 @@ function getGoatDetails(name, yearBorn) {
         '<br />' +
         '<p class="card-text">Though they <strong>prefer to be in groups,</strong> they do not want to be the center of attention. They are reserved ' +
         'and quiet, most likely because they like spending much time in their thoughts. Goats like to spend money on fashionable ' +
-        'things that give them a first class appearance. Although goats enjoy spending money on the finer things in life, they are not snobbish.</p>'
+        'things that give them a first class appearance. Although goats enjoy spending money on the finer things in life, they are not snobbish.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -341,10 +368,13 @@ function getMonkeyDetails(name, yearBorn) {
         '<br />' +
         '<p class="card-text">Monkeys are <strong>fast learners and crafty</strong> opportunists. They have many interests ' +
         'and need partners who are capable of stimulating them. While some like the eccentric nature of ' +
-        'Monkeys, others don\'t trust their sly, restless, and inquisitive nature.</p>'
+        'Monkeys, others don\'t trust their sly, restless, and inquisitive nature.</p>' +
         '<br />' +
         '<p class="card-text">Although they are clever and creative, Monkeys can\'t always exhibit their talents properly. ' +
         'They like to accept challenges and <strong>prefer urban life</strong> to rural.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -371,9 +401,12 @@ function getRoosterDetails(name, yearBorn) {
         'They <strong>enjoy the spotlight</strong> and will exhibit their charm on any occasion.</p>' +
         '<br />' +
         '<p class="card-text">Roosters expect others to listen to them while they speak, and can become agitated if they don\'t. ' +
-        'Vain and boastful, Roosters like to brag about themselves and their accomplishments.</p>'
+        'Vain and boastful, Roosters like to brag about themselves and their accomplishments.</p>' +
         '<br />' +
         '<p class="card-text">Their behavior of continually seeking the unwavering attention of others annoys people around them at times.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -399,7 +432,7 @@ function getDogDetails(name, yearBorn) {
         'Therefore, Dogs tend to leave others with <strong>the impression that they have a stubborn personality.</strong></p>' +
         '<br />' +
         '<p class="card-text"><strong>Born with a good nature,</strong> Dogs do not tend to be criminals or seek dishonest gains. ' +
-        'They just need a quiet life and a good family and, therefore, forget the ugliness and evil on Earth.</p>'
+        'They just need a quiet life and a good family and, therefore, forget the ugliness and evil on Earth.</p>' +
         '<br />' +
         '<p class="card-text"><strong>Dogs are always ready to help others</strong> and do not care about their own interests, ' +
         'but if they find themselves betrayed by cunning people they will feel shocked and hurt.</p>' +
@@ -407,6 +440,9 @@ function getDogDetails(name, yearBorn) {
         '<p class="card-text"><strong>When thrown into doubt,</strong> Dogs think the world is evil and complicated. Then they ' +
         'criticize sharply when giving comments on something, and infer all things are ' +
         'according to their pessimistic point of view.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -432,6 +468,9 @@ function getPigDetails(name, yearBorn) {
         '<p class="card-text">General speaking, Pigs are relatively calm when facing trouble. No matter how difficult the problems ' +
         'are Pigs encounter, they can handle things properly and carefully. They have a great sense of ' +
         'responsibility to finish what they are engaged in.</p>' +
+        '<div class="text-center">' +
+          '<button type="submit" class="btn btn-primary" onclick="clearDetails()">Check for someone else?!</button>' +
+        '</div>' +
       '</div>';
 }
 
@@ -522,4 +561,30 @@ function pickEyeColor() {
     document.getElementById('blueLbl').style.color = "#595959";
     document.getElementById('greyLbl').style.color = "#6b6b47";
   }
+}
+
+// Clear all the chosen details
+function clearDetails() {
+  // Clear name, age and gender
+  document.getElementById('nameInput').value = '';
+  document.getElementById('age').value = 26;
+  document.getElementById('demo').innerHTML = '26';
+  document.getElementById('boyBtn').classList.remove('active');
+  document.getElementById('girlBtn').classList.remove('active');
+  // Clear short button selector
+  document.getElementById('long').classList.remove('active');
+  document.getElementById('middle').classList.remove('active');
+  document.getElementById('short').classList.remove('active');
+  document.getElementById('bald').classList.remove('active');
+  // Clear eye radio button check and set default color lbl
+  document.getElementById('brown').checked = false;
+  document.getElementById('brownLbl').style.color = '#595959';
+  document.getElementById('green').checked = false;
+  document.getElementById('greenLbl').style.color = '#595959';
+  document.getElementById('blue').checked = false;
+  document.getElementById('blueLbl').style.color = '#595959';
+  document.getElementById('grey').checked = false;
+  document.getElementById('greyLbl').style.color = '#595959';
+  // Hide the result
+  document.getElementById('displayResult').hidden = true;
 }
